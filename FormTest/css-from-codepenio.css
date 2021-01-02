@@ -1,0 +1,147 @@
+.root {
+    background-color: darkgray;
+}
+
+body {
+    background-color: gray;
+}
+
+.center-content-area {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+}
+
+a.article-title {
+    font-style: italic;
+}
+
+.form1 {
+    background-color: lightgray;
+    
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 500px;
+
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+.ul-form1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.li-form1 {
+    margin-top: 1em;
+  }
+  
+ .label-form1 {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  .input-form1, .textarea-form1 {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+.input-form1, textarea-form1:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+ .textarea-form1 {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button-form1 {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+    
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+  
+
+.form2 {
+    background-color: lightgray;
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 290px;
+    /* Form outline */
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+.p-form2 {
+    margin-top: 1em;
+  }
+  
+ .label-form2 {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .input-form2, .textarea-form2 {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+.input-form2:focus, textarea-form2:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+ .textarea-form2 {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 10em;
+  }
+  
+.button-form2 {
+  /* Give the button more height and width than in form 1 */
+  
+  height: 30px;
+  width: 100%;
+  border-width: 5px;
+  border-radius: 10px;
+  
+  /* Make the call to action on the button stand out more.*/
+  font-size: 1.025em;
+  font-weight: 800;
+}

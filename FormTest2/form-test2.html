@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form Test2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="form-test2.css" rel="stylesheet">
+    </head>
+
+    <!-- Start copy here for use on Codepen.io -->
+    <body>
+        <div class="center-content-area">
+            <header>
+                <h1>
+                    My Second Form?
+                </h1>
+                <p>
+                    <time datetime="2020-12-19">December 19, 2020</time>
+                </p>
+            </header>
+            <main>
+                <p>
+                    This is an example payment form. The form design is copied from the MDN lesson <a href="How to structure a web form"></a>How to structure a web form. Like the form I created for the previous lesson, I feel that the form code provided by MDN needs revisions to match the guidelines provided by Stéphanie Walter. I will create a second version of the form further down on the page to implement those revisions.
+                </p>
+
+                <!-- Beginning of form code from MDN -->
+                <form class="form-form1">
+                    <h2 class="h2-form1">
+                        MDN Example Payment Form
+                    </h2>
+                    <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                    <section>
+                        <h3 class="h3-form1">Contact information</h3>
+                        <fieldset class="fieldset-form1">
+                          <legend>Title</legend>
+                          <ul class="ul-form1">
+                              <li>
+                                <label for="title_1" class="label-form1">
+                                  <input class="input-form1" type="radio" id="title_1" name="title" value="K" >
+                                  King
+                                </label>
+                              </li>
+                              <li>
+                                <label for="title_2">
+                                  <input class="input-form1" type="radio" id="title_2" name="title" value="Q">
+                                  Queen
+                                </label>
+                              </li>
+                              <li>
+                                <label for="title_3">
+                                  <input class="input-form1" type="radio" id="title_3" name="title" value="J">
+                                  Joker
+                                </label>
+                              </li>
+                          </ul>
+                        </fieldset>
+                        <p>
+                          <label for="name" class="label-form1">
+                            <span>Name: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                          </label>
+                          <input class="input-form1" type="text" id="name" name="username">
+                        </p>
+                        <p>
+                          <label for="mail" class="label-form1">
+                            <span>E-mail: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                          </label>
+                          <input class="input-form1" type="email" id="mail" name="usermail">
+                        </p>
+                        <p>
+                          <label for="pwd" class="label-form1">
+                            <span>Password: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                          </label>
+                          <input class="input-form1" type="password" id="pwd" name="password">
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="h3-form1">Payment information</h3>
+                        <p>
+                          <label for="card" class="label-form1">
+                            <span>Card type:</span>
+                          </label>
+                          <select id="card" name="usercard" class="input-form1">
+                            <option value="visa">Visa</option>
+                            <option value="mc">Mastercard</option>
+                            <option value="amex">American Express</option>
+                          </select>
+                        </p>
+                        <p>
+                          <label for="number" class="label-form1">
+                            <span>Card number:</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                          </label>
+                          <input type="tel" id="number" name="cardnumber" class="input-form1">
+                        </p>
+                        <p>
+                          <label for="date" class="label-form1">
+                            <span>Expiration date:</span>
+                            <strong><abbr title="required">*</abbr></strong>
+                            <em>formatted as mm/dd/yyyy</em>
+                          </label>
+                          <input class="input-form1" type="date" id="date" name="expiration">
+                        </p>
+                    </section>
+                    <p> 
+                        <button class="button-form1" type="submit">Validate the payment</button>
+                    </p>
+                </form>
+                <p>
+                    Note: During my work on the revised form I broke the look of the first form with my CSS modifications for responsive web design. At this point in time (December 26, 2020) I'm not going to repair the CSS. I'm moving forward in my study. See the last paragraph on this page for more information.
+                </p>
+                <!-- End of form code provided by MDN -->
+                <hr>
+                <!-- Beginning of my code, a revised version of the MDN form code. -->
+                <form class="form-form2">
+                    <h2 class="h2-form2">
+                        MDS Mobile Friendly Revised Payment Form
+                    </h2>
+                    <p>Required fields indicated by "(required)" after the field label.</p>
+                    <section>
+                        <h3 class="h3-form2">Contact information</h3>
+                        <p>
+                          <label for="name2" class="label-form2">
+                            Name <span class="span-form2">(required)</span>
+                          </label><br>
+                          <input class="input-form2" type="text" id="name2" name="username2">
+                        </p>
+                        <p>
+                          <label for="mail2" class="label-form2">
+                            E-mail <span class="span-form2">(required)</span>
+                          </label><br>
+                          <input class="input-form2" type="email" id="mail2" name="usermail2">
+                        </p>
+                    </section>
+                    <section>
+                        <h3 class="h3-form2">Payment information</h3>
+                        <p>
+                          <label for="number2" class="label-form2">
+                            Card number <span class="span-form2">(required)</span>
+                          </label><br>
+                          <input type="tel" id="number2" name="cardnumber2" class="input-form2">
+                        </p>
+                        <p>
+                          <label for="date2" class="label-form2">
+                            Expiration date <span class="span-form2">(required)</span>
+                          </label><br>
+                          <input class="input-form2" type="date" id="date2" name="expiration2"><br>
+                            <span class="field-format-info-form2">Date format mm/dd/yyyy</span>
+                        </p>
+                        <p>
+                            <label for="cvv2" class="label-form2">
+                              Card verification code <span class="span-form2">(required)</span>
+                            </label><br>
+                            <input class="input-thirdwidth-form2" type="tel" id="cvv2" name="cvv2"><br>
+                          </p>
+                    </section>
+                    <p> 
+                        <button class="button-form2" type="submit">Send Payment Information</button>
+                    </p>
+                </form>
+                <!-- End of my revised form code. -->
+                <hr>
+                <p>
+                    I have the form working properly on every simulated device on which I tested it. However, the simulated devices don't have the ability to open the device's keyboard. So I can't gauge how well the design works when the keyboard occupies a portion of the screen. This is where testing on real devices is needed.
+                </p>
+                <p>
+                    To help me style the page/form for smaller devices, I was reading <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">MDN documentation for @media queries</a>. The reading reminded me that the best way to design a page layout begins with a mobile-first approach. Here is a quote from the documentation which struck me.
+                </p>
+                <blockquote>
+                  Broadly, you can take two approaches to a responsive design. You can start with your desktop or widest view and then add breakpoints to move things around as the viewport becomes smaller, or you can start with the smallest view and add layout as the viewport becomes larger. This second approach is described as mobile first responsive design and is <i>quite often the best approach to follow.</i>
+                </blockquote>
+                <blockquote>
+                    The view for the very smallest devices is quite often a simple single column of content, much as it appears in normal flow. This means that you probably don't need to do a lot of layout for small devices — order your source well and you will have a readable layout by default.
+                </blockquote>
+                <hr>
+                <p>
+                    <time datetime="2020-12-26">December 26, 2020</time>
+                </p>
+                <p>
+                    Feeling that I have finished my work on this page, I'm going to move to new content on the MDN learning path. But before continuing my study of form layout and design, I want to take a little time to work with the MDN walkthrough example for mobile-first design. The code is provided on the page referenced previously.
+                </p>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+    <!-- Stop copy here for use on codepen.io -->
+</html>

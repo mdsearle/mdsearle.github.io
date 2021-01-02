@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+.root {
+    background-color: darkgray;
+}
+
+body:before {
+    background-color: gray;
+  }
+
+.center-content-area {
+    background-color: whitesmoke;
+  }
+
+@media screen and (max-width: 599px) {
+    
+    .center-content-area{
+    
+        max-width: 96%;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 1em;
+        border-radius: 1em;
+        font-size: 1rem;
+    }
+}  
+
+@media screen and (min-width: 600px) {
+    
+    .center-content-area{
+    
+        max-width: 96%;;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 1em 4em;
+        border-radius: 1em;
+        font-size: 1rem;
+    }
+}  
+
+@media screen and (min-width: 768px) {
+    body:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-image: linear-gradient(
+            90deg,
+            rgba(111, 95, 70, 0.4),
+            rgba(211, 195, 170, 0.4)
+          ),
+          url(https://assets.codepen.io/1150322/site_background_full.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
+    .center-content-area {    
+        max-width: 800px;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 2em 6em;
+        border-radius: 3em;
+        font-size: 1.125rem;
+    }
+}
+
+
+/* Styling for the MDN form starts here */
+
+.h2-form1 {
+    margin-top: 0;
+}
+
+.ul-form1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form-form1 {
+    background-color: lightgray;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.div-form1+div {
+    margin-top: 1em;
+}
+
+.label-form1 span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+.input-form1 {
+    font: 1em sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.input-form1[type=radio] {
+    width: auto;
+    border: none;
+}
+
+.input-form1:focus {
+    border-color: #000;
+}
+
+.fieldset-form1 {
+    width: 250px;
+    box-sizing: border-box;
+    margin-left: 136px;
+    border: 1px solid #999;
+}
+
+.button-form1 {
+    margin: 20px 0 0 124px;
+}
+
+.label-form1 {
+  position: relative;
+}
+
+.label-form1 em {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+}
+
+.extra-padding {
+    padding-left: 1em;
+}
+
+/* Styling for the MDN form ends here */
+
+/* Styling for my (MDS) form starts here */
+
+
+.h3-form2 {
+    margin-top: 2em;
+}
+
+.form-form2 {
+    background-color: lightgray;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.input-form2 {
+    font: 1em sans-serif;
+    width: 100%;
+    height: 2em;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-top: .33em;
+}
+
+.input-form2:focus {
+    border-color: #000;
+}
+
+.input-thirdwidth-form2 {
+    font: 1em sans-serif;
+    width: 33%;
+    height: 2em;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.field-format-info-form2 {
+    display: inline-block;
+    margin-top: .33em;
+}
+
+.button-form2 {
+    width: 100%;
+    height: 4em;
+    margin-top: .5em;
+    border-radius: .25em;
+}
+
+/* Styling for my form ends here */
+
+
+blockquote {
+    background-color: white;
+}

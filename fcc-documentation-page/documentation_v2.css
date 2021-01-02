@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box; /* Use this attribute on the "*" selector to make all elements observe this box-sizing behavior. */
+}
+
+:root { /* The ":root" pseudo-class represents the html element. */
+  font-size: 1.2em;
+  line-height: 1.2em;
+  background-color:  #fff2e6;
+}
+
+body {
+  margin: 0px;
+}
+
+.container-div {
+  border-style: solid;
+  border-width: 0px 2px;
+  border-color: orange;
+  max-width: 66vw;
+  margin: auto; /* Use this to center a block element on it's parent element. */
+}
+
+.header, .footer {
+  display: inline-block; /* Interesting behavior when you don't use this display property. */
+  width: 100%;
+  background-color: #000066;
+  color: #ffe5cc;
+}
+
+.main {  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.left-div {
+  border-right: 1px solid #404040;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.right-div {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+h1, h2, h3, h4, p {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#navbar ul {
+  margin: 1vw;
+  padding: 0px; /* An ul element has default padding. Use this to left align on the margin. */
+  list-style-type: none;  
+}
+
+#navbar ul li {
+  background-color: lightgray;
+  transition: background-color .5s;
+}
+
+#navbar ul li:hover {
+  background-color: orange;
+  /*   color: #000066; Doesn't seem to change the color of the text when hovering over the li element. */
+}
+
+#navbar a {
+  padding: 1rem;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #000066;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,206 @@
+<!--
+    December 26, 2020
+
+    This example code is copied from the MDN site: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries
+-->
+
+
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Walkthrough: a simple mobile-first layout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./ASimpleMobile-FirstLayout.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header>
+              <nav>
+                <ul>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Meet the team</a></li>
+                  <li><a href="">Blog</a></li>
+                </ul>
+              </nav>
+            </header>
+            <main>
+                <article>
+                    <div>
+                        <h1>Veggies!</h1>
+                        <section class="original-MDN-content">
+                            <h2>MDN original content</h2>
+                            <p>
+                                Content here ... class="content"
+                            </p>
+                            <p>
+                                Following this paragraph is a ul with class=grid and a series of "cards," one card per li in the ul.
+                            </p>
+                        </section>
+                        <hr>
+                        <section class="my-commentary-and-revisions">
+                        <h2>My revisions and commentary</h2>
+                            <p>
+                                In the example code provided by MDN there isn't any CSS defined for the class="content." In my version of the code I added the class and set a max-width of 80 em. I did this within the media query for screens with a min-width of 70em. The purpose of this paragraph describes what I did. And it allows me to see the effect of the change by limiting the max-width of the content area on larger screens.
+                            </p>
+                            <p>
+                                Looking at the page given the changes that I made: it appears to me that the content area is too wide. It allows at least 20 average sized words per line. I believe that most UX designers recommend about 12 words per line, maximum. It helps with readability. So I'm going to modify the @media query parameters as well as the content area width to see if I can achieve a better line width for UX design.
+                            </p>
+                            <p>
+                                I achieved the width that I wanted by adding CSS for a class named content and setting the max-width value. But, in doing so I broke the behavior of the rest of the page. It seems that it is always displaying in a three-column layout. Here is my code and the MDN original code for comparison.
+                            </p>
+                        </section>
+                        <section class="code-comparison">
+                        <div class="left-side">
+                            <h3>My revised CSS</h3>
+                            <code>
+                                <pre>
+     1  @media screen and (min-width: 10em) {
+     2      article {
+     3          display: grid;
+     4          grid-template-columns: 3fr 1fr;
+     5          column-gap: 20px;
+     6      }
+     7                          
+     8      nav ul {
+     9          display: flex;
+    10      }
+    11                         
+    12      nav li {
+    13          flex: 1;
+    14      }
+    15                            
+    16      .content {
+    17          max-width: 18em;
+    18      }
+    19  }
+    20                            
+    21  @media screen and (min-width: 20em) {
+    22      main {
+    23          display: grid;
+    24          grid-template-columns: 3fr 1fr;
+    25          column-gap: 20px;
+    26      }
+    27                            
+    28      article {
+    29          margin-bottom: 0;
+    30      }
+    31                            
+    32     footer {
+    33          border-top: 1px solid #ccc;
+    34          margin-top: 2em;
+    35      }
+    36                           
+    37      .content {
+    38          max-width: 30em;
+    39      }
+    40  }
+                                </pre>
+                            </code>
+                        </div>
+                        <div class="right-side">
+                            <h3>MDN original CSS</h3>
+                            <code>
+                                <pre>
+     1  @media screen and (min-width: 40em) {
+     2      article {
+     3          display: grid;
+     4          grid-template-columns: 3fr 1fr;
+     5          column-gap: 20px;
+     6      }
+     7                            
+     8      nav ul {
+     9          display: flex;
+    10      }
+    11                           
+    12      nav li {
+    13          flex: 1;
+    14      }
+    15  }
+    16
+    17  @media screen and (min-width: 70em) {
+    18      main {
+    19          display: grid;
+    20          grid-template-columns: 3fr 1fr;
+    21          column-gap: 20px;
+    22      }
+    23                            
+    24      article {
+    25          margin-bottom: 0;
+    26      }
+    27                            
+    28      footer {
+    29          border-top: 1px solid #ccc;
+    30          margin-top: 2em;
+    31      }
+    32  }
+                                </pre>
+                            </code>
+                        </div>
+                        </section> <!-- End of code comparison section-->
+                        <hr>
+                        <section class="original-MDN-content">
+                        <h2>MDN Original Content</h2>
+                        <ul class="grid">
+                            <li>
+                                <h3>Card 1</h3>
+                                <p>...</p>
+                            </li>
+                            <li>
+                                <h3>Card 2</h3>
+                                <p>...</p>
+                            </li>
+                            <li>
+                                <h3>Card 3</h3>
+                                <p>...</p>
+                            </li>
+                            <li>
+                                <h3>Card 4</h3>
+                                <p>...</p>
+                            </li>
+                            <li>
+                                <h3>Card 5</h3>
+                                <p>...</p>
+                            </li>
+                        </ul>
+                        </section>
+                    </div>
+                    <aside class="related">
+                        <h2>MDN Original Content</h2>
+                        <p>
+                            Related info here in this aside ... class="related"
+                        </p>
+                    </aside>
+                </article>
+              <aside class="sidebar">
+                  <h2>MDN Original Content</h2>
+                <h3>External vegetable-based links</h3>
+                <p>
+                    This is another aside, meant to act as a sidebar ... class="sidebar"
+                </p>
+                <ul>
+                  <li>
+                    Link 1
+                  </li>
+                  <li>
+                      Link 2
+                  </li>
+                </ul>
+              </aside>
+            </main>
+      
+            <footer>
+                <p>&copy;2019 Mozilla Developer Network</p>
+                <h3>My Footnotes</h3>
+                <p>
+                    <time datetime="2020-12-26">December 26, 2020</time>
+                </p>
+                <p>
+                    The example code (mostly labeled as MDN Original Content) is copied from the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">MDN site</a>. 
+                </p>
+                
+            </footer>
+        </div>
+    </body>
+</html>

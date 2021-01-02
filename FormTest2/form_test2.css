@@ -1,0 +1,15 @@
+.root {
+    background-color: darkgray;
+}
+
+body {
+    background-color: gray;
+}
+
+.center-content-area {
+    background-color: whitesmoke;
+
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: auto;
+}

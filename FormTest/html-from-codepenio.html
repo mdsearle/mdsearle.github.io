@@ -1,0 +1,90 @@
+<body>
+    <div class="center-content-area">
+    <header>
+        <h1>
+            My First Form?
+        </h1>
+        <p>
+            December 18, 2020
+        </p>
+    </header>
+
+    <main>
+        <p>
+            This isn't my first HTML form. I've created lots of forms; none of them looked very nice. None of them performed a real function. All of them were "test" forms where nothing was submitted to a server.
+        </p>
+        <p>
+            I'm trying to reboot my web development learning by using focused guides to help direct my study and development. This page and form are based on the <a class="article-title" href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form">Your First Form</a> guide on MDN.
+        </p>
+        <p>
+             I'm also hoping to learn some "best practices" and web design standards along the way. To that end,
+              I'm trying to incorporate the principles advocated by Stéphanie Walter in her article 
+              <a class="article-title" href="https://www.smashingmagazine.com/2018/08/ux-html5-mobile-form-part-1/">UX And HTML5: Let’s Help Users Fill In Your Mobile Form (Part 1)</a> published on the <a href="https://www.smashingmagazine.com">Smashing Magazine</a> website.
+        </p>
+
+        <p>
+            Using the HTML and CSS code copied from the MDN article, this is what the form looks like. Note that the Submit button doesn't work properly because I haven't created the page pointed to by the form action. And, at the moment, this page isn't getting served by a web server.
+        </p>
+
+       <form class="form1" action="/my-handling-form-page" method="post">
+                <ul class="ul-form1">
+                    <li class="li-form1">
+                        <label class="label-form1" for="name1">Name:</label>
+                        <input class="input-form1" type="text" id="name1" name="user_name">
+                    </li>
+                    <li class="li-form1">
+                        <label class="label-form1" for="mail1">E-mail:</label>
+                        <input class="input-form1" type="email" id="mail1" name="user_email">
+                    </li>
+                    <li class="li-form1">
+                        <label class="label-form1" for="msg1">Message:</label>
+                        <textarea class="input-form1, textarea-form1" id="msg1" name="user_message"></textarea>
+                </li>
+                <li class="button-form1">
+                    <button type="submit">Send your message</button>
+                  </li>
+               </ul>
+       </form>
+      <p>
+        The code provided by MDN doesn't follow the guidelines/recommendations provided by Stéphanie. So I will attempt to recode the form to more closely match her recommendations. The revised form follows.
+      </p>
+      
+      <form class="form2" action="/my-handling-form-page" method="post">
+        <p class="p-form2">
+          <label class="label-form2" for="name2">Name</label><br/>
+          <input class="input-form2" type="text" id="name2" name="user_name">
+        </p>
+                        
+                    <p class="p-form2">
+                        <label class="label-form2" for="mail2">E-mail address</label><br/>
+                        <input class="input-form2" type="email" id="mail2" name="user_email">
+                    </p>
+                    <p class="p-form2">
+                        <label class="label-form2" for="msg2">Message</label><br/>
+                        <textarea class="textarea-form2" id="msg2" name="user_message"></textarea>
+                </p>
+                <p>
+                    <button class="button-form2" type="submit">Send your message</button>
+               </p>
+      </form>
+      <p>
+        I made the following changes to make the form more mobile friendly. 
+        <ul>
+          <li>
+            Moved the labels above the fields to allow more width for the fields on the limited mobile device screen width
+          </li>
+          <li>
+            Reduced the width of the form to 290px to accommodate the narrower screen width of almost all mobile devices. However, the form still overflows the width of the screen on an iPhone 5 with a screen width of 320px. I am a little disappointed by this finding. I want to play with @media queries, max-width, and device-width to see whether I can find the correct combination of CSS settings to get the form onto the iPhone 5 screen.
+          </li>
+          <li>
+              Increased the height of the input fields to 30px to make the hit zone a little larger. I think it also improves the look of the spacing on the form.
+          </li>
+      </ul>
+      </p>
+    </main>
+    
+    <footer>
+
+    </footer>
+</div>
+</body>

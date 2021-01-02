@@ -1,0 +1,88 @@
+/* 
+
+User Story #15: My Technical Documentation page should use at least one media query.
+
+What is considered the minimum pixel width of a laptop/desktop? Use this in my media query.
+
+*/
+:root {
+  --navbar-width: 320px;
+  --navbar-padding: 20px;
+  --maindoc-left: calc(var(--navbar-width) + var(--navbar-padding) + var(--navbar-padding) + 1px);
+  
+  background-color: black;
+}
+
+body {
+  background-color: antiquewhite;
+  font-size: 1.25rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: var(--navbar-width);
+  min-width: 300px;
+  height: 100%;
+  padding: var(--navbar-padding);
+  background-color: lightgray;  
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar header {
+  margin: 1rem;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style-type: none;  
+}
+
+#navbar ul li {
+  background-color: darkgray;
+  color: darkblue;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 99%;
+  margin: 1px;
+  padding: 1rem;
+  transition: background-color .5s;
+}
+
+#navbar ul li:hover {
+  border-style: solid;
+  border-color: darkblue;
+  border-width: .5px;
+  background-color: lightblue;
+  color: darkblue;
+}
+
+#navbar a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main_footer_container {
+  position: absolute;
+  top: 0px;
+  left: var(--maindoc-left);
+  width: calc(100% - 400px);
+/*  flex-shrink: 1; */
+  background-color: orange;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.main-section {
+  background-color: blue;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey: pineapple on pizza?</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<html>
+<body>
+  <div class="center-layout-area">
+    
+    <header>
+      <h1 id="title">Pineapple On Pizza</h1>
+      <p id="description>">Share your opinion in our survey.</p>
+    </header>
+
+  <form id="survey-form" action="https://codepen.io/mdsearle/full/yLeWJmM" enctype="text/plain" method="get" target="_self">
+    
+      <p>Do you enjoy pineapple on pizza?</p>
+      <fieldset>
+         <label for="Yes" class="rb-label"><input id="Yes" value="Yes" name="radio-button-yesno" type="radio" class="input-radio" checked> Yes</label><br/>
+         <label for="No" class="rb-label"><input id="No" value="No" name="radio-button-yesno" type="radio" class="input-radio"> No</label><br/>
+         <label for="It depends" class="rb-label"><input id="It depends" value="It depends" name="radio-button-yesno" type="radio" class="input-radio"> It depends</label>
+      </fieldset>
+    <hr/>
+    <div>
+      <label id="comments-label" for="comments">If you chose "It depends", please tell us why.</label>
+      <textarea id="comments" class="input-textarea" placeholder="Example: I only like pineapple with ham or Canadian bacon."></textarea>
+    </div>
+    <hr/>
+    <div class="">
+      <label id="dropdown-label" for="dropdown">How often do you buy pizza?</label>
+      <select id="dropdown" name="select-list" class="full-width input-field-adjustment" size="1">
+        <option value="Week">At least once a week</option>
+        <option value="Month">At least once a month</option>
+        <option value="Year">At least once a year</option>
+        <option value="Year">At least once a decade</option>
+        <option value="Never">Never - I don't like pizza.</option>
+      </select>
+    </div>
+    <hr/>
+    <div class="">
+      <label id="number-label" for="number">How many pizzas do you usually buy at once?</label>
+      <input id="number" name="number-input" type="number" class="full-width input-field-adjustment" placeholder="13" min="1" max="125">
+    </div>
+    <hr/>
+    <div class="">
+      <p>What are your favorite pizza toppings?</p>
+      <fieldset>
+        <input id="pineapple" value="pineapple" name="checkbox-group" type="checkbox" checked>
+        <label for="pineapple" class="cb-label">Pineapple</label>
+        <br/>
+        <input id="Canadian bacon" value="Canadian bacon" name="checkbox-group" type="checkbox" checked>
+        <label for="Canadian bacon" class="cb-label">Canadian Bacon</label>
+        <br>
+        <input id="pepperoni" value="pepperoni" name="checkbox-group" type="checkbox">
+        <label for="pepperoni" class="cb-label">Pepperoni</label>
+        <br>
+        <input id="sausage" value="sausage" name="checkbox-group" type="checkbox">
+        <label for="sausage" class="cb-label">Sausage</label>
+        <br>
+        <input id="chicken" value="chicken" name="checkbox-group" type="checkbox">
+        <label for="chicken" class="cb-label">Chicken</label>
+        <br>
+        <input id="bacon" value="bacon" name="checkbox-group" type="checkbox">
+        <label for="bacon" class="cb-label">Bacon</label>
+        <br>
+        <input id="onions" value="onions" name="checkbox-group" type="checkbox">
+        <label for="onions" class="cb-label">Onions</label>
+        <br>
+        <input id="mushrooms" value="mushrooms" name="checkbox-group" type="checkbox">
+        <label for="mushrooms" class="cb-label">Mushrooms</label>
+        <br>
+        <input id="peppers" value="peppers" name="checkbox-group" type="checkbox">
+        <label for="peppers" class="cb-label">Peppers</label>
+        <br>
+        <input id="olives" value="olives" name="checkbox-group" type="checkbox">
+        <label for="olives" class="cb-label">Olives</label>
+      </fieldset>
+    </div>
+    <hr/>
+    <div class="">
+      <label id="name-label" for="name">What is your favorite pizza restaurant?</label><br>
+      <input id="name" name="name-input" type="text" placeholder="Pizza Shack" class="required-field full-width input-field-adjustment" required>
+      <span class="required-text">required</span>
+    </div>
+    <hr/>
+    <div class="">
+      <label id="email-label" for="email">Please enter your email address.</label><br>
+      <input id="email" name="email-input" type="email" placeholder="bob.smith@example.com" class="required-field full-width input-field-adjustment" required>
+      <span class="required-text">required</span>
+    </div>
+    <hr/>
+    <button id="submit" type="submit" value="Submit" class="full-width">Submit</button>
+    <p>Thank you for sharing your opinion.</p>
+  </form>
+  </div> <!-- center-layout-area -->
+</body>
+</html>
