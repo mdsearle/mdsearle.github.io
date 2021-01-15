@@ -39,6 +39,7 @@ header {
 main {
   box-sizing: inherit;
   max-width: 800px;
+  padding: 2%;
   margin: auto;
 }
 /*
@@ -101,6 +102,7 @@ main {
   grid-row-end: 2;
 }
 */
+
 footer{
   box-sizing: inherit; 
   background: linear-gradient(#fff, #ccc);
