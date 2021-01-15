@@ -1,4 +1,4 @@
-:root, * {
+:root {
   display: block;
   box-sizing: border-box;
   margin: 0%;
@@ -22,7 +22,7 @@
 body {
   box-sizing: inherit;
   margin: auto;
-  background-color: antiquewhite;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
