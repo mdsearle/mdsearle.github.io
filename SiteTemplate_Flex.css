@@ -1,11 +1,10 @@
-:root {
-  box-sizing: border-box;
-  background-color: white;
-  justify-content: center;
+:root, * {
   display: block;
-  line-height: 1.2em;
-  font-size: 1.1em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  margin: 0%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
   /*
@@ -20,13 +19,11 @@
 }
 */
 
-
 body {
   box-sizing: inherit;
-  max-width: 1280px;
-  
-  margin: 0px; /* try it without this setting to see what happens */ 
-  background-color: white;
+  max-width: 800px;
+  margin: auto; /* try it without this setting to see what happens*/
+  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +37,7 @@ header {
   padding: 1em;
   min-height: 5em;
 }
-
+/*
 .central_container {
   box-sizing: inherit;
   border: solid orange;
@@ -109,3 +106,4 @@ footer{
   padding: 1em;
   min-height: 5em;
 }
+*/
