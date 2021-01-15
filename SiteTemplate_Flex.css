@@ -2,9 +2,9 @@
   display: block;
   box-sizing: border-box;
   margin: 0%;
-  background-color: white;
+  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  
 }
 
   /*
@@ -22,7 +22,8 @@
 body {
   box-sizing: inherit;
   margin: auto;
-  background-color: white;
+  background-color: whitesmoke;
+  color: black;
   display: flex;
   flex-direction: column;
 }
