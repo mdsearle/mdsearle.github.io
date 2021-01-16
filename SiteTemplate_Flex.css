@@ -26,20 +26,19 @@ header {
   min-height: 5em;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   main {
     max-width: 800px;
     margin: auto;
   }
 }
 
-@media (max-width: 799px) {
+@media screen and (max-width: 799px) {
   main {
-    max-width: 96%;
-    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
-
 
 footer {
   background-color: black;
