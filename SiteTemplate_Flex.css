@@ -52,6 +52,10 @@ p {
   margin-bottom: 2%;
 }
 
+footer p {
+  margin-left: 2em;
+}
+
 /*
 footer{
   box-sizing: inherit; 
