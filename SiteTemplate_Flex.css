@@ -48,7 +48,8 @@ p {
   margin-bottom: 2%;
 }
 
-footer p {
-  margin-left: 2em;
+header p, footer p {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
