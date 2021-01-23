@@ -25,12 +25,11 @@ header.page-header {
   background: #222;
 }
 header.article-header {
-  background: white;
-}
-
-article {
-  margin-top: 0;
-}
+  border-top: 1px solid darkblue;
+  border-bottom: 1px solid darkblue;
+  background: #ddd;
+  align-content: center;
+  }
 
 @media screen and (min-width: calc(800px + 2em)) {
   main {
@@ -63,5 +62,6 @@ header p, footer p {
 
 h1 {
   color: darkblue;
+  font-size: 200%;
 }
 
