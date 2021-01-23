@@ -18,8 +18,7 @@ body {
 }
 
 header {
-  background: linear-gradient(#ccc, #fff);
-  box-shadow: 0px -10px 10px 1px #aaa;
+  background: "#222";
   margin: 0px;
   min-height: 5em;
 }
