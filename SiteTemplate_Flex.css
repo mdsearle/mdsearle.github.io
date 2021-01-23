@@ -29,6 +29,7 @@ header.article-header {
   background: #ddd;
   display: flex;
   align-content: center;
+  text-align: center;
   }
 
 @media screen and (min-width: calc(800px + 2em)) {
@@ -63,6 +64,5 @@ header p, footer p {
 h1 {
   color: darkblue;
   font-size: 200%;
-  text-align: center;
 }
 
