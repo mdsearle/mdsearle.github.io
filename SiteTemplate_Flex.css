@@ -27,6 +27,7 @@ header.page-header {
 header.article-header {
   border-bottom: 1px solid darkblue;
   background: #ddd;
+  display: flex;
   align-content: center;
   }
 
