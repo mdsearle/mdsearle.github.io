@@ -34,12 +34,12 @@ header.article-header {
 
 @media screen and (min-width: calc(800px + 2em)) {
   main {
-    max-width: 800px;
+    max-width: 720px;
     margin: auto;
   }
 }
 
-@media screen and (max-width: calc(799px + 2em)) {
+@media screen and (max-width: calc(719px + 2em)) {
   main {
     margin-left: 1em;
     margin-right: 1em;
