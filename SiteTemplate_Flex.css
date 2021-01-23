@@ -18,9 +18,18 @@ body {
 }
 
 header {
-  background: #222;
   margin: 0px;
   min-height: 5em;
+}
+header.page-header {
+  background: #222;
+}
+header.article-header {
+  background: white;
+}
+
+article {
+  margin-top: 0;
 }
 
 @media screen and (min-width: calc(800px + 2em)) {
