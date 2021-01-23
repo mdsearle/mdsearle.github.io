@@ -63,5 +63,6 @@ header p, footer p {
 h1 {
   color: darkblue;
   font-size: 200%;
+  text-align: center;
 }
 
